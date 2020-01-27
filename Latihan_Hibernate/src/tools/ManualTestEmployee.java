@@ -56,11 +56,11 @@ public class ManualTestEmployee {
 //                Employee e=edao.getById(90);
 //                System.out.println(e.getEmployeeId()+" "+e.getFirstName()+" "+e.getLastName());
 
-//                //getAll
-//                List<Employee> employees=edao.search("163");
-//                for (Employee e : employees) {
-//                    System.out.println(e.getEmployeeId()+" "+e.getFirstName()+" "+e.getLastName()+" "+
-//                                        e.getPhoneNumber()+" "+e.getSalary()+" "+e.getCommissionPct()+" "+e.getManagerId()+" "+e.getDepartmentId().getDepartmentId());
-//                }
+                //getAll
+                List<Employee> employees=edao.search("163");
+                for (Employee e : employees) {
+                    System.out.println(e.getEmployeeId()+" "+e.getFirstName()+" "+e.getLastName()+" "+
+                                        e.getPhoneNumber()+" "+e.getSalary()+" "+e.getCommissionPct()+" "+e.getManagerId().getEmployeeId()+" "+e.getDepartmentId().getDepartmentId());
+                }
     }
 }

@@ -36,7 +36,6 @@ public class AccountDAO implements IAccountDAO {
         try {
             session.save(a);
             transaction.commit();
-            System.out.println(password);
             result = true;
         } catch (Exception e) {
             e.printStackTrace();
